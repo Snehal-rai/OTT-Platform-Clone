@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shikha Netflix</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #e50914;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .content-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .content-item img {
+            width: 100px;
+            height: 150px;
+            margin-right: 10px;
+        }
+
+        .content-item:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        .search-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #searchInput {
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        #searchResults {
+            margin-top: 10px;
+        }
+/* Add this to your existing styles or create a new section */
+.trending-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.content-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.content-item:hover {
+    transform: scale(1.05);
+}
+
+.content-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #e50914; /* Border color as per your design */
+}
+
+.content-item p {
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+/* Add this to your existing styles or create a new section */
+.trending-section {
+    /* Existing styles for the trending section */
+}
+
+.content-item {
+    /* Existing styles for the content items */
+}
+
+.highlighted-text {
+    color: #e50914; /* Highlight color as per your design */
+    font-weight: bold;
+    /* Add any additional styling you want */
+}
+/* Add this to your existing styles or create a new section */
+.recommended-section {
+    /* Existing styles for the recommended section */
+}
+
+.content-item {
+    /* Existing styles for the content items */
+}
+
+.highlighted-image {
+    width: 50%; /* Adjust the width as needed */
+    height: auto;
+    border: 2px solid #e50914; /* Highlight border color */
+    border-radius: 10px;
+}
+
+.highlighted-text {
+    color: #e50914; /* Highlight text color */
+    font-weight: bold;
+    /* Add any additional styling you want */
+}
+
+/* Additional styles for the search section */
+.search-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#searchInput {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+}
+
+#searchResults {
+    margin-top: 10px;
+    /* Add any additional styling you want for search results */
+}
+
+/* Add this to your existing styles or create a new section */
+.content-item img {
+    width: 100%; /* Set to 100% to maintain responsiveness */
+    height: 200px; /* Set a fixed height or adjust as needed */
+    margin-right: 10px;
+    object-fit: cover; /* Maintain aspect ratio while covering the designated space */
+}
+
+/* Additional styles for the highlighted images in Recommended Content Section */
+.highlighted-image {
+    width: 100%;
+    height: 200px;
+    border: 2px solid #e50914;
+    border-radius: 10px;
+    object-fit: cover;
+}
+/* Add this to your existing styles or create a new section */
+header {
+    background-color: #e50914;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffd700; /* Change the color on hover */
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+<header>
+    <div class="navbar">
+        <h1 class="logo">Shikha Netflix</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Movies</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+    <!-- Main Content Section -->
+    <main>
+    <!-- Trending Movies Section -->
+    <section class="trending-section">
+        <h2>Trending Movies</h2>
+        <!-- Display trending movies here -->
+        <div class="content-item">
+            <img src="C:\Users\HP\OneDrive\Pictures\Screenshots\images\Agra.jpg" alt="Movie 1">
+            <p>Movie 1</p>
+        </div>
+        <div class="content-item">
+            <img src="C:\Users\HP\OneDrive\Pictures\Screenshots\images\OOTY.jpg" alt="Movie 2">
+            <p>Movie 2</p>
+        </div>
+        <div class="content-item">
+            <img src="C:\Users\HP\OneDrive\Pictures\Screenshots\images\Shillong-1.jpg" alt="Movie 2">
+            <p>Movie 2</p>
+        </div>
+
+    </section>
+
+        <!-- Trending Series Section -->
+        <section class="trending-section">
+            <h2>Trending Series</h2>
+            <!-- Display trending series here -->
+            <div class="content-item">
+                <img src="C:\Users\HP\OneDrive\Pictures\Screenshots\images\delhi.jpg" alt="Series 1">
+                <p class="highlighted-text">Delhi ki Saara</p>
+            </div>
+            <div class="content-item">
+                <img src="C:\Users\HP\OneDrive\Pictures\Screenshots\images\Manali.jpg" alt="Series 2">
+                <p>Series 2</p>
+            </div>
+        </section>
+
+<!-- Recommended Content Section -->
+<section class="recommended-section">
+    <h2>Recommended Content</h2>
+
+    <!-- Display recommended content here -->
+    <div class="content-item">
+        <img src="C:\Users\HP\OneDrive\Pictures\Screenshots\images\udaipur.jpg" alt="Recommended 1" class="highlighted-image">
+        <p class="highlighted-text">Udaipur ki Shanti </p>
+    </div>
+    <div class="content-item">
+        <img src="C:\Users\HP\OneDrive\Pictures\Screenshots\images\Varanasi1.jpg" alt="Recommended 2" class="highlighted-image">
+        <p class="highlighted-text">Kashi Ki duniya </p>
+    </div>
+</section>
+
+<!-- Search Functionality -->
+<section class="search-section">
+    <label for="searchInput">Search:</label>
+    <input type="text" id="searchInput" placeholder="Search for movies or series...">
+    <div id="searchResults"></div>
+</section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <!-- Add footer content if necessary -->
+        &copy; 2024 Shikha Netflix. All rights reserved.
+    </footer>
+
+    <!-- Script Section -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const searchInput = document.getElementById('searchInput');
+            const searchResults = document.getElementById('searchResults');
+
+            // Simulate data for demonstration purposes
+            const contentList = ['Movie 1', 'Movie 2', 'Series 1', 'Series 2'];
+
+            searchInput.addEventListener('input', function () {
+                const searchTerm = searchInput.value.toLowerCase();
+                const filteredResults = contentList.filter(content => content.toLowerCase().includes(searchTerm));
+
+                // Display search results
+                displaySearchResults(filteredResults);
+            });
+
+            function displaySearchResults(results) {
+                searchResults.innerHTML = '';
+
+                results.forEach(result => {
+                    const resultItem = document.createElement('div');
+                    resultItem.classList.add('content-item');
+                    resultItem.innerHTML = `<img src="placeholder.jpg" alt="${result}"><p>${result}</p>`;
+                    searchResults.appendChild(resultItem);
+
+                    // Add click event to redirect to content details page
+                    resultItem.addEventListener('click', function () {
+                        // Redirect to content details page with the selected result
+                        window.location.href = 'content.html';
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
